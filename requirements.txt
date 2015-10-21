@@ -3,3 +3,4 @@ numpy==1.9.2
 ujson==1.33
 unicodecsv==0.9.4
 Werkzeug==0.10.4
+gunicorn==0.17.2
