@@ -1,0 +1,58 @@
+body {
+	background-color: #111;
+	margin: 0;
+	color: #fff;
+	font: "Arial Black", Gadget, sans-serif;
+	padding: 0;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.row {
+	width: 100vw;
+	height: 30vh;
+	//border: 1px solid red;
+	display: inline-block;
+}
+
+.col {
+	max-width: 32vw;
+	max-height: 32vh;
+	position: relative;
+	height: 100%;
+	width: 33%;
+	float: left;
+}
+
+.pixel {
+	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+	position: relative;
+	width: 4%;
+	height: 4%;
+	float: left;
+	border: 1px solid purple;
+}
+
+.endline { 
+    clear:both;
+}
+
+table {
+	height: 100%;
+    width: 100%;
+    border: 1px solid #666;
+    border-spacing: 0; 
+}
+
+td {
+    width: 4%;
+    position:relative;
+    border: 1px solid #222;
+}
+td:after{
+    content:'';
+    display:block;
+    margin-top:100%;
+}
