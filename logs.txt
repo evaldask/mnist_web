@@ -1,0 +1,101 @@
+2015-10-21T21:35:06.509370+00:00 heroku[web.1]: State changed from starting to crashed
+2015-10-21T21:35:07.655082+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=digits-recognizer.herokuapp.com request_id=f9c0acf9-e307-4c56-ba76-b674d132fdc8 fwd="158.129.18.177" dyno= connect= service= status=503 bytes=
+2015-10-21T21:35:08.152922+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=digits-recognizer.herokuapp.com request_id=09095db4-2f66-450c-9e5d-bfcf1df39b9b fwd="158.129.18.177" dyno= connect= service= status=503 bytes=
+2015-10-21T21:35:08.467138+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=digits-recognizer.herokuapp.com request_id=485857fa-5b35-434b-a39e-ec4ef12b782c fwd="158.129.18.177" dyno= connect= service= status=503 bytes=
+2015-10-21T21:35:08.798521+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=digits-recognizer.herokuapp.com request_id=ab9894a8-f07d-4704-be19-b6a244d63fc2 fwd="158.129.18.177" dyno= connect= service= status=503 bytes=
+2015-10-21T21:35:09.483785+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=digits-recognizer.herokuapp.com request_id=4a3374a6-449a-4085-86c9-47a28507037f fwd="158.129.18.177" dyno= connect= service= status=503 bytes=
+2015-10-21T21:35:09.218577+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=digits-recognizer.herokuapp.com request_id=c2ea8b0c-ea57-4d46-a80c-a87a8c3d3b6d fwd="158.129.18.177" dyno= connect= service= status=503 bytes=
+2015-10-21T21:35:09.899463+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=digits-recognizer.herokuapp.com request_id=5caaa256-e90b-4a33-aa09-3bf62c960cfd fwd="158.129.18.177" dyno= connect= service= status=503 bytes=
+2015-10-21T21:35:10.188206+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=digits-recognizer.herokuapp.com request_id=e3a36208-4db3-4910-8bcc-491318a89888 fwd="158.129.18.177" dyno= connect= service= status=503 bytes=
+2015-10-21T21:35:10.489962+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=digits-recognizer.herokuapp.com request_id=d04144be-48b1-48ec-abbb-69ba0870e00d fwd="158.129.18.177" dyno= connect= service= status=503 bytes=
+2015-10-21T21:35:10.746802+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=digits-recognizer.herokuapp.com request_id=6d51d6f8-c9b5-4eab-b070-9be382cefc7e fwd="158.129.18.177" dyno= connect= service= status=503 bytes=
+2015-10-21T21:37:50.268091+00:00 heroku[web.1]: State changed from crashed to starting
+2015-10-21T21:37:55.661694+00:00 heroku[web.1]: Starting process with command `gunicorn app:app`
+2015-10-21T21:37:57.724848+00:00 app[web.1]: bash: gunicorn: command not found
+2015-10-21T21:37:58.570365+00:00 heroku[web.1]: Process exited with status 127
+2015-10-21T21:37:58.578424+00:00 heroku[web.1]: State changed from starting to crashed
+2015-10-21T21:38:09.305828+00:00 heroku[api]: Starting process with command `init` by evalkaz94@hotmail.com
+2015-10-21T21:38:14.712578+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=digits-recognizer.herokuapp.com request_id=12a5831f-b2bf-4486-b49f-708008546e5f fwd="158.129.18.177" dyno= connect= service= status=503 bytes=
+2015-10-21T21:38:14.909577+00:00 heroku[run.3422]: Awaiting client
+2015-10-21T21:38:14.985361+00:00 heroku[run.3422]: Starting process with command `init`
+2015-10-21T21:38:15.092754+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=digits-recognizer.herokuapp.com request_id=7d8ac18d-4aeb-4096-af13-ce687b3546bc fwd="158.129.18.177" dyno= connect= service= status=503 bytes=
+2015-10-21T21:38:15.173330+00:00 heroku[run.3422]: State changed from starting to up
+2015-10-21T21:38:15.564421+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=digits-recognizer.herokuapp.com request_id=927c6dd6-8e14-4d05-975b-2f38d5c32cdf fwd="158.129.18.177" dyno= connect= service= status=503 bytes=
+2015-10-21T21:38:15.879361+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=digits-recognizer.herokuapp.com request_id=b8a1ba7a-4b43-42b0-b2a6-f0c0cc8e3162 fwd="158.129.18.177" dyno= connect= service= status=503 bytes=
+2015-10-21T21:38:16.281268+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=digits-recognizer.herokuapp.com request_id=5d3170be-5aff-41e2-9ec9-b2fbce1a0313 fwd="158.129.18.177" dyno= connect= service= status=503 bytes=
+2015-10-21T21:38:16.496531+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=digits-recognizer.herokuapp.com request_id=e9b536dd-0d70-4570-b41c-10a89782089f fwd="158.129.18.177" dyno= connect= service= status=503 bytes=
+2015-10-21T21:38:16.900044+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=digits-recognizer.herokuapp.com request_id=c0d9b0d7-55a6-4b2d-bf9e-361cb5762555 fwd="158.129.18.177" dyno= connect= service= status=503 bytes=
+2015-10-21T21:38:16.872837+00:00 heroku[run.3422]: State changed from up to complete
+2015-10-21T21:38:16.863719+00:00 heroku[run.3422]: Process exited with status 127
+2015-10-21T21:38:17.457799+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=digits-recognizer.herokuapp.com request_id=45ba5e33-bfaa-4490-8238-deae35a8a976 fwd="158.129.18.177" dyno= connect= service= status=503 bytes=
+2015-10-21T21:38:17.803447+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=digits-recognizer.herokuapp.com request_id=bfe1e59f-2e07-4b20-9d80-fcd95a27a3c2 fwd="158.129.18.177" dyno= connect= service= status=503 bytes=
+2015-10-21T21:38:18.205993+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=digits-recognizer.herokuapp.com request_id=14fa2efd-d453-460a-8a09-7db19d60394e fwd="158.129.18.177" dyno= connect= service= status=503 bytes=
+2015-10-21T21:38:18.528740+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=digits-recognizer.herokuapp.com request_id=a874b87d-c9e1-47f6-b84b-ab0ef958616e fwd="158.129.18.177" dyno= connect= service= status=503 bytes=
+2015-10-21T21:38:18.910275+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=digits-recognizer.herokuapp.com request_id=57e16f66-7f76-47c1-bbd7-f34014773d68 fwd="158.129.18.177" dyno= connect= service= status=503 bytes=
+2015-10-21T21:38:19.279274+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=digits-recognizer.herokuapp.com request_id=dd02d728-3358-4cbe-942a-48bab78d7541 fwd="158.129.18.177" dyno= connect= service= status=503 bytes=
+2015-10-21T21:38:19.639306+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=digits-recognizer.herokuapp.com request_id=340e8230-80b8-4944-b599-8871083720db fwd="158.129.18.177" dyno= connect= service= status=503 bytes=
+2015-10-21T21:44:27.952994+00:00 heroku[api]: Deploy 3f04590 by evalkaz94@hotmail.com
+2015-10-21T21:44:27.953129+00:00 heroku[api]: Release v6 created by evalkaz94@hotmail.com
+2015-10-21T21:44:28.028796+00:00 heroku[slug-compiler]: Slug compilation started
+2015-10-21T21:44:28.028807+00:00 heroku[slug-compiler]: Slug compilation finished
+2015-10-21T21:44:28.457514+00:00 heroku[web.1]: State changed from crashed to starting
+2015-10-21T21:44:32.498788+00:00 heroku[web.1]: Starting process with command `gunicorn app:app`
+2015-10-21T21:44:33.535392+00:00 app[web.1]: bash: gunicorn: command not found
+2015-10-21T21:44:34.104848+00:00 heroku[web.1]: Process exited with status 127
+2015-10-21T21:44:34.119845+00:00 heroku[web.1]: State changed from starting to crashed
+2015-10-21T21:44:43.323318+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=digits-recognizer.herokuapp.com request_id=8b0a6961-87bf-4cfb-ac74-38de6edc1491 fwd="158.129.18.177" dyno= connect= service= status=503 bytes=
+2015-10-21T21:44:43.692706+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=digits-recognizer.herokuapp.com request_id=b48b64d4-7abe-43c3-bdbc-50bce939920f fwd="158.129.18.177" dyno= connect= service= status=503 bytes=
+2015-10-21T21:47:45.865397+00:00 heroku[slug-compiler]: Slug compilation started
+2015-10-21T21:47:45.865405+00:00 heroku[slug-compiler]: Slug compilation finished
+2015-10-21T21:47:45.789641+00:00 heroku[api]: Deploy a544634 by evalkaz94@hotmail.com
+2015-10-21T21:47:45.789697+00:00 heroku[api]: Release v7 created by evalkaz94@hotmail.com
+2015-10-21T21:47:46.707727+00:00 heroku[web.1]: State changed from crashed to starting
+2015-10-21T21:47:51.436557+00:00 heroku[web.1]: Starting process with command `gunicorn app:app`
+2015-10-21T21:47:53.252182+00:00 app[web.1]: 2015-10-21 21:47:53 [3] [INFO] Listening at: http://0.0.0.0:11707 (3)
+2015-10-21T21:47:53.252311+00:00 app[web.1]: 2015-10-21 21:47:53 [3] [INFO] Using worker: sync
+2015-10-21T21:47:53.258839+00:00 app[web.1]: 2015-10-21 21:47:53 [9] [INFO] Booting worker with pid: 9
+2015-10-21T21:47:53.251532+00:00 app[web.1]: 2015-10-21 21:47:53 [3] [INFO] Starting gunicorn 0.17.2
+2015-10-21T21:47:53.261696+00:00 app[web.1]: 2015-10-21 21:47:53 [9] [ERROR] Exception in worker process:
+2015-10-21T21:47:53.261699+00:00 app[web.1]: Traceback (most recent call last):
+2015-10-21T21:47:53.261700+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gunicorn/arbiter.py", line 485, in spawn_worker
+2015-10-21T21:47:53.261701+00:00 app[web.1]:     worker.init_process()
+2015-10-21T21:47:53.261702+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gunicorn/workers/base.py", line 100, in init_process
+2015-10-21T21:47:53.261703+00:00 app[web.1]:     self.wsgi = self.app.wsgi()
+2015-10-21T21:47:53.261703+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gunicorn/app/base.py", line 103, in wsgi
+2015-10-21T21:47:53.261704+00:00 app[web.1]:     self.callable = self.load()
+2015-10-21T21:47:53.261705+00:00 app[web.1]:     return util.import_app(self.app_uri)
+2015-10-21T21:47:53.261705+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 25, in load
+2015-10-21T21:47:53.261708+00:00 app[web.1]:     app.run(host='0.0.0.0', port=80)
+2015-10-21T21:47:53.261706+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gunicorn/util.py", line 372, in import_app
+2015-10-21T21:47:53.261707+00:00 app[web.1]:     __import__(module)
+2015-10-21T21:47:53.261710+00:00 app[web.1]: IndentationError: unindent does not match any outer indentation level
+2015-10-21T21:47:53.261711+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gunicorn/arbiter.py", line 485, in spawn_worker
+2015-10-21T21:47:53.261711+00:00 app[web.1]: Traceback (most recent call last):
+2015-10-21T21:47:53.261712+00:00 app[web.1]:     worker.init_process()
+2015-10-21T21:47:53.261707+00:00 app[web.1]:   File "/app/app.py", line 65
+2015-10-21T21:47:53.261709+00:00 app[web.1]:                                    ^
+2015-10-21T21:47:53.261713+00:00 app[web.1]:     self.wsgi = self.app.wsgi()
+2015-10-21T21:47:53.261713+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gunicorn/workers/base.py", line 100, in init_process
+2015-10-21T21:47:53.261717+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gunicorn/util.py", line 372, in import_app
+2015-10-21T21:47:53.261714+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gunicorn/app/base.py", line 103, in wsgi
+2015-10-21T21:47:53.261715+00:00 app[web.1]:     self.callable = self.load()
+2015-10-21T21:47:53.261715+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 25, in load
+2015-10-21T21:47:53.261716+00:00 app[web.1]:     return util.import_app(self.app_uri)
+2015-10-21T21:47:53.261717+00:00 app[web.1]:     __import__(module)
+2015-10-21T21:47:53.261718+00:00 app[web.1]:   File "/app/app.py", line 65
+2015-10-21T21:47:53.261719+00:00 app[web.1]:     app.run(host='0.0.0.0', port=80)
+2015-10-21T21:47:53.261719+00:00 app[web.1]:                                    ^
+2015-10-21T21:47:53.261817+00:00 app[web.1]: 2015-10-21 21:47:53 [9] [INFO] Worker exiting (pid: 9)
+2015-10-21T21:47:53.261720+00:00 app[web.1]: IndentationError: unindent does not match any outer indentation level
+2015-10-21T21:47:53.711027+00:00 app[web.1]: 2015-10-21 21:47:53 [3] [INFO] Shutting down: Master
+2015-10-21T21:47:53.711034+00:00 app[web.1]: 2015-10-21 21:47:53 [3] [INFO] Reason: Worker failed to boot.
+2015-10-21T21:47:54.579027+00:00 heroku[web.1]: Process exited with status 3
+2015-10-21T21:47:54.583440+00:00 heroku[web.1]: State changed from starting to crashed
+2015-10-21T21:47:56.309090+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=digits-recognizer.herokuapp.com request_id=40f4718c-4c5e-4a4f-8846-1f20944cbb40 fwd="158.129.18.177" dyno= connect= service= status=503 bytes=
+2015-10-21T21:47:56.669125+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=digits-recognizer.herokuapp.com request_id=d6900429-8021-463d-b999-126406d1344b fwd="158.129.18.177" dyno= connect= service= status=503 bytes=
+2015-10-21T21:47:57.421977+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=digits-recognizer.herokuapp.com request_id=ceb0a710-05e7-4444-94d4-5cc08decb5cf fwd="158.129.18.177" dyno= connect= service= status=503 bytes=
+2015-10-21T21:47:57.696835+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=digits-recognizer.herokuapp.com request_id=ec4c6a6c-4626-449e-aa3e-d4ef0753e520 fwd="158.129.18.177" dyno= connect= service= status=503 bytes=
+2015-10-21T21:47:58.206006+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=digits-recognizer.herokuapp.com request_id=5c783585-7b88-40d6-9e78-d0e72a76fab1 fwd="158.129.18.177" dyno= connect= service= status=503 bytes=
+2015-10-21T21:47:58.474177+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=digits-recognizer.herokuapp.com request_id=886a54f7-82d1-4f09-aae5-7a984a669e3f fwd="158.129.18.177" dyno= connect= service= status=503 bytes=
+2015-10-21T21:47:58.854451+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=digits-recognizer.herokuapp.com request_id=a0c3df1c-3371-45f1-8def-387b79af91ee fwd="158.129.18.177" dyno= connect= service= status=503 bytes=
+2015-10-21T21:47:59.129557+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=digits-recognizer.herokuapp.com request_id=721ae30e-ccf6-4c85-b041-864c16baf349 fwd="158.129.18.177" dyno= connect= service= status=503 bytes=
