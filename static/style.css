@@ -8,6 +8,10 @@ body {
 	vertical-align: middle;
 }
 
+a:link, a:visited, a:hover, a:active {
+    color: white;
+}
+
 .row {
 	width: 100vw;
 	height: 30vh;
