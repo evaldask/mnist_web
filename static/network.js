@@ -10,6 +10,7 @@ function insertPixels(column_id, x, y) {
 	    {
 	      var cell = document.createElement("td");
 	      var cellText = document.createTextNode("");
+	      cell.setAttribute("id", i+"-"+j);
 	      cell.appendChild(cellText);
 	      row.appendChild(cell);
 	    }
@@ -20,14 +21,29 @@ function insertPixels(column_id, x, y) {
 
 }
 
-function paintCell(cell) {
-	if(painting) 
+function paintCell(x, y) {
+	if(x >= 0 && y >= 0 && x < 20 && y < 20) 
 	{
-    	cell.style.backgroundColor = "white";
+		var cell = canvas.rows[x].cells[y];
+		if(painting) 
+		{
+	    	cell.style.backgroundColor = "white";
+		}
+		else if(erasing) {
+			cell.style.backgroundColor = "#111";
+		}
 	}
-	else if(erasing) {
-		cell.style.backgroundColor = "#111";
-	}
+}
+
+function drawBrush(cell) {
+	var array = cell.id.split('-');
+	var i = parseInt(array[0]);
+	var j = parseInt(array[1]);
+	paintCell(i, j);
+	paintCell(i - 1, j); 
+	paintCell(i + 1, j); 
+	paintCell(i, j - 1); 
+	paintCell(i, j + 1);  
 }
 
 function getCanvasValues() {
@@ -78,7 +94,7 @@ function setUpMouseControl() {
 	    for (var j = 0; j < canvas.rows[i].cells.length; j++)
 	        canvas.rows[i].cells[j].onmouseover = function () 
 		    {
-		        paintCell(this); 
+		        drawBrush(this);
 		    };
 	    }
 	}
