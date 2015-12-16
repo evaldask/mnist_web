@@ -12,12 +12,11 @@ class Sigmoid:
     def backward(self, x):
         return x * (1 - x)
 
-    def formatData(self, data):
+    def format_data(self, data):
         minValue = np.amin(data)
         maxValue = np.amax(data)
 
         return self._min * (data == minValue) + self._max * (data == maxValue)
-
 
 class Elliott:
     name = "Elliott"
@@ -31,7 +30,7 @@ class Elliott:
         xAbs = 1 + np.abs(x)
         return 1 / (xAbs * xAbs)
 
-    def formatData(self, data):
+    def format_data(self, data):
         minValue = np.amin(data)
         maxValue = np.amax(data)
 
@@ -48,7 +47,7 @@ class Tahn:
     def backward(self, x):
         return 1 - x * x
 
-    def formatData(self, data):
+    def format_data(self, data):
         minValue = np.amin(data)
         maxValue = np.amax(data)
 
@@ -65,8 +64,12 @@ class Step:
     def backward(self, x):
         return 0.5 * (np.sign(x) + 1)
 
-    def formatData(self, data):
+    def format_data(self, data):
         minValue = np.amin(data)
         maxValue = np.amax(data)
 
         return self._min * (data == minValue) + self._max * (data == maxValue)
+
+class Activation:
+    def normalize(self, x):
+        return np.tanh(x)

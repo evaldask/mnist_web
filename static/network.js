@@ -64,7 +64,7 @@ function getCanvasValues() {
 }
 
 function predict() {
-    results = getCanvasValues();
+    var results = getCanvasValues();
 
     $.post("recognizer/",
     {
@@ -73,6 +73,22 @@ function predict() {
     function(data, status){
     	var result = document.getElementById("resultsField");
         result.innerHTML = ("<h4> I predict it is: " + data + "</h4>");
+    });
+}
+
+function train() {
+	var results = getCanvasValues();
+	var selectedOption = document.getElementById("train-value");
+	var y = selectedOption[selectedOption.selectedIndex].value;
+
+    $.post("trainer/",
+    {
+        data: results,
+		digit: y
+    },
+    function(data, status){
+    	var result = document.getElementById("resultsField");
+        result.innerHTML = ("<h4>Train data is saved</h4>");
     });
 }
 

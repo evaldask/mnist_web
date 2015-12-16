@@ -1,0 +1,7 @@
+{
+	"port": 1234,
+	"activationFunction": "Sigmoid",
+	"layer1": "layer_1.json",
+	"layer2": "layer_2.json",
+	"train": "data.csv"
+}

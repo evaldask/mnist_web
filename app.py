@@ -3,27 +3,29 @@ import numpy as np
 import json
 import codecs
 import os
-import sys
+import ActivationFunctions as af
 
 
 app = Flask(__name__)
 W0 = 0
 W1 = 0
+CONFIG = 0
+activationFunction = 0
 APP_ROOT = os.path.dirname(os.path.abspath(__file__))
 
 @app.route('/')
 def index():
     return render_template('index.html')
 
-@app.route('/recognizer/', methods=['GET', 'POST'])
+@app.route('/recognizer/', methods=['POST'])
 def recognizer():
-    sentData = request.form['data']
+    sent_data = request.form['data']
 
-    if len(sentData) != 400:
+    if len(sent_data) != 400:
         return 'Invalid request'
 
-    sentData += '1'
-    formated = np.array(list(sentData), dtype=np.float32)
+    sent_data += '1'
+    formated = np.array(list(sent_data), dtype=np.int8)
     predicted = predict(formated)
 
     results =  str(np.argmax(predicted))
@@ -33,26 +35,39 @@ def recognizer():
 
     return results
 
+@app.route('/trainer/', methods=['POST'])
+def train():
+    sent_data = request.form['data']
+    digit = request.form['digit']
+
+    if len(sent_data) != 400 or not digit:
+        return 'Invalid request'
+
+    data_matrix = np.zeros(shape=(28,28), dtype=np.int8)
+    for x in range(20):
+        for y in range(20):
+            data_matrix[x + 4, y + 4] = sent_data[x * 20 + y]
+
+    array = data_matrix.reshape(-1).astype(np.int8) * 255
+    dataFile = open('data.csv','ab')
+    dataFile.write(digit + ",")
+    array.tofile(dataFile,sep=',',format='%1.0f')
+    dataFile.write("\n")
+    dataFile.close()
+
+    return "Added"
+
 def predict(data):
-    global W0
-    l1 = sigmoid(np.dot(data, W0))
-    global W1
+    global W0, W1, activationFunction
+    l1 = activationFunction.forward(np.dot(data, W0))
     l2 = (np.dot(l1, W1))
-    return tanFunc(l2)
 
-def sigmoid(x):
-    return 1 / (1 + np.exp(-x))
+    return af.Activation().normalize(l2)
 
-def tanFunc(x):
-    return np.tanh(x)
-
-@app.before_first_request
-def loadWeights():
-    print "Weights have been loaded!"
-    global W0
-    W0 = importData("layer_1.json")
-    global W1
-    W1 = importData("layer_2.json")
+def loadWeights(weight0, weight1):
+    global W0, W1
+    W0 = importData(weight0)
+    W1 = importData(weight1)
 
 def importData(name):
     obj_text = codecs.open(os.path.join(APP_ROOT, name), 'r', encoding='utf-8').read()
@@ -60,6 +75,21 @@ def importData(name):
     a_new = np.array(b_new, dtype=np.float32)
     return a_new
 
+def setActivationFunction(x):
+    x = x.lower()
+    return {
+        'sigmoid': af.Sigmoid(),
+        'tahn': af.Tahn(),
+        'elliott': af.Elliott(),
+        'step': af.Step(),
+    }.get(x, af.Sigmoid())
+
 if __name__ == '__main__':
-	print sys.path
-	app.run(host='0.0.0.0', port=80)
+    global CONFIG, activationFunction
+    with open(os.path.join(APP_ROOT, "config.json")) as fd:
+        CONFIG = json.load(fd)
+
+    activationFunction = setActivationFunction(CONFIG['activationFunction'])
+
+    loadWeights(CONFIG['layer1'], CONFIG['layer2'])
+    app.run(host='0.0.0.0', port=CONFIG['port'])
